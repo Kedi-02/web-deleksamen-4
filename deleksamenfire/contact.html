@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="title" content="Kontakt" />
+
+  <meta property="fb:app_id" content="your_app_id" />
+  <meta name="keywords" content="html, css, seo, forms" />
+  <meta name="og:site" content="kedik@hiof.no" />
+  <meta propert="og:locale" content="nb_NO" />
+  <meta property="og:title" content="Dette er min kontakt side" />
+  <meta property="og:description" content="Denne siden viser min kontakt informasjon" />
+  <meta property="og:type" content="side-page" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="pictures/forside.jpg" />
+  <meta propert="og:site_name" content="contact" />
+  <meta property="og:determiner" content="ett">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:alt" content="Nike logo som min hovedlogo" />
+
+  <!-- Meta taggene under er for Twitter:  -->
+  <meta name="twitter:site" content="kedik@hiof.no">
+  <meta name="twitter:title" content="Dette er min kontakt side">
+  <meta name="twitter:description" content="Denne siden viser min kontakt informasjon">
+  <meta name="twitter:image" content="pictures/forside.jpg">
+  <meta name="twitter:image:alt" content="Bildet av Nike logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  <!-- Her er mitt favicon -->
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="try">Kontakt informasjon</h1>
+
+      <nav id="navv">
+
+        <a href="forside.html"><img id="logo" src="pictures/forside.jpg" alt="My logo" /></a>
+
+        <ul id="mine-linker" class="min-link" style.display=block>
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="uuvsseo.html">UU vs SEO</a></li>
+          <li><a href="cms.html">CMS</a></li>
+          <li><a href="analyse.html">Analyse</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+
+      <button onclick="tilToppen()" id="btn" title="Go to top">Top</button>
+      <!-- legge inn kontaktinformasjon (du kan bruke skolens) og passende ikoner til de ulike punktene, 
+        et kart 
+        og et kontaktskjema. -->
+      <section class="h2">
+        <h2>Her kommer det Kontaktinformasjon: </h2>
+        <i class="fa-brands fa-instagram"></i>
+      </section>
+
+      <section class="kart">
+        <h3> Kart: </h3>
+        <!-- <iframe width="500" height="400" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+        &q=Space+Needle,Seattle+WA"> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32757.640946861113!2d11.368815824948932!3d59.126501607380455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412eee6f99ce3%3A0xb721be206db3bc9f!2sHalden!5e0!3m2!1sno!2sno!4v1667176447265!5m2!1sno!2sno"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </section>
+      <!-- referrerpolicy="no-referrer-when-downgrade" -->
+      <!-- <section class="kontakt">
+        <h3> Kontaktskjema </h3>
+        <form action="kedik@hiof.no" method="post">
+          <input type="email" name="email" placeholder="Email Addresse" required>
+          <input type="text" name="name" placeholder="Skriv ditt navn..." required>
+          <input type="text" name="name" placeholder="Skriv ditt navn..." required>
+          <input type="tel" name="telefon" maxlength="8" placeholder="Tlf.Nr..." required> -->
+      <!-- <label for="comment"> Kommentar: </label> -->
+      <!-- <section class="column">
+            <textarea name="textarea" rows="8" cols="10" placeholder="Valgfri mekding"></textarea>
+            <button type="submit" id="knapp"> Send </button>
+          </section>
+        </form>
+      </section> -->
+
+      <section id="contact">
+        <h2> Kontakt Meg Personlig: </h2>
+
+        <div class="kontakt-valg">
+          <article class="kontakt1-valg">
+            <h4> E-Mail </h4>
+            <a href="#" class="fa fa-envelope"></a>
+            <h5> kedikrasniqi@hotmail.com </h5>
+            <a href="mailto:kedikrasniqi@hotmail.com" target="_blank">
+              send en Mail
+            </a>
+          </article>
+
+          <article class="kontakt1-valg">
+            <h4> Instagram </h4>
+            <a href="#" i class="fa fa-instagram"></a>
+            <h5> Kedi </h5>
+            <a href="sms:+4748250474?body=takk" target="_blank">
+              Kontakt på instagram
+            </a>
+          </article>
+
+          <article class="kontakt1-valg">
+            <h4> WhatsApp </h4>
+            <a href="#" i class="fa fa-whatsapp"></a>
+            <h5> +47 482 50 474 </h5>
+            <!-- <a href="https://api.whatsapp.com/send?=+4748250474" target="_blank"> -->
+            <a href="tel:+4748250474p000" target="_blank">
+              Send en melding
+            </a>
+          </article>
+        </div>
+
+        <section class="form">
+          <h2> Vennligst fyll ut Kontaktskjemaet: </h2>
+          <p id="information"> Obligatoriske felt er merket med *</p>
+          <form>
+            <input type="text" name="name" placeholder="Name *" required>
+            <input type="tel" name="telefon" maxlength="8" placeholder="Tlf.Nr *" required>
+            <input type="email" name="email" placeholder="Email *" required>
+            <textarea name="message" rows="7" placeholder="Comment"></textarea>
+
+            <label for="checkbox">Lagre informasjon til
+              neste gang jeg kommenterer:</label>
+            <input type="checkbox">
+
+            <!-- <p> Lagre informasjon til 
+              neste gang jeg kommenterer: 
+              <input type="checkbox"> 
+            </p> -->
+
+            <button type="submit" id="skjema-knapp">
+              Send Message
+            </button>
+          </form>
+        </section>
+
+        <!-- <section>
+          <h3>Del</h3>
+          <a href=""><img src=”../pictures/facebook.jpg”></a>
+        </section> -->
+
+        <!-- <section>
+          <h4> Del på Sosiale Medier: </h4>
+          <a href="#" class="fa fa-facebook-f" target="_blank" aria-label="link-til-facebook"></a>
+          <a href="#" class="fa fa-twitter" target="_blank" aria-label="link-til-twitter"></a>
+          <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+        </section> -->
+
+        <section class="facebook">
+          <h4>Del på Facebook:</h4>
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+            width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            id="del"></iframe>
+        </section>
+
+        <section class="twitter">
+          <h4>Del på Twitter:</h4>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+            id="del">Del</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="del"></script>
+        </section>
+
+        <section class="pinterest">
+          <h4>Del på Pinterest:</h4>
+          <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+        </section>
+
+      </section>
+    </main>
+
+    <aside>
+      <section id="rel-articles">
+        <header>
+          <h4>Relaterte linker til disse temaene:</h4>
+        </header>
+        <ul>
+          <li>
+            <a href="https://www.bing.com/search?q=hvordan+lage+kontaktskjema+html&cvid=49194df1fe734720aa7b9ec811572666&aqs=edge..69i57.5322j0j1&pglt=675&FORM=ANNTA1&PC=LCTS"
+              target="_blank">
+              Ett søk på google om forms</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.bing.com/search?q=hvordan+lage+kart+html&qs=n&form=QBRE&sp=-1&pq=hvordan+lage+kart+html&sc=9-22&sk=&cvid=317B6D4F110145E9A5596834F538E4A2&ghsh=0&ghacc=0&ghpl="
+              target="_blank">
+              Ett søk om hvordan lage ett kart</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.bing.com/search?q=hvordan+lage+icons+html&qs=n&form=QBRE&sp=-1&pq=hvordan+lage+icons+html&sc=8-23&sk=&cvid=3787DDDB4B2C495B96784995D5EA2DF3&ghsh=0&ghacc=0&ghpl="
+              target="_blank">
+              Ett søk om ikoner</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <footer>
+      <p>kedikrasniqi@hotmail.com</p>
+      <section class="footer-icons">
+        <ul>
+          <p>Følg meg på sosiale medier:</p>
+          <a href="#" class="fa fa-facebook" target="_blank"></a>
+          <a href="#" class="fa fa-twitter" target="_blank"></a>
+          <a href="#" class="fa fa-pinterest" target="_blank"></a>
+        </ul>
+      </section>
+    </footer>
+  </div>
+  <script>
+    let x = document.getElementById("mine-linker");
+    function myFunction() {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    //For å få til koden under med at man kan scrolle til toppen så brukte jeg W3School.com som kilde
+    let minKnapp = document.getElementById("btn");
+
+    window.onscroll = function () { funksjonsSkroll() };
+
+    function funksjonsSkroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        minKnapp.style.display = "block";
+      } else {
+        minKnapp.style.display = "none";
+      }
+    }
+
+    function tilToppen() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    //For å fikse til at man kan dele på facebook, twitter og pinterest så brukte jeg JS koden under til det. 
+    //Jeg brukte en kilde for å få til JS koden under, det var denne youtube videoen: https://youtu.be/q-tGimz34Ho
+    const link = `https://www.facebook.com`;
+    const melding = encodeURIComponent('Hei, jeg fant denne artikkelen');
+    const title = encodeURIComponent(document.querySelector('title').textContent);
+
+    const facebook = document.querySelector('.fa-facebook-f');
+    facebook.href = `https://www.facebook.com/share.php?u=${link}`;
+
+    const twitter = document.querySelector('.fa-twitter');
+    twitter.href = `https://twitter.com/share?&url=${link}&text=${melding}&hashtags=webutvikling`;
+
+    const pinterest = document.querySelector('.fa-pinterest');
+    pinterest.href = `https://no.pinterest.com/`;
+  </script>
+</body>
+
+</html>

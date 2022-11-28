@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="Forside" />
+  <meta property="fb:app_id" content="your_app_id" />
+  <meta name="keywords" content="html, css, seo, forms, uu" />
+  <meta name="og:site" content="kedik@hiof.no" />
+  <meta property="og:locale" content="nb_NO" />
+  <meta property="og:title" content="Forsiden av min nettside" />
+  <meta property="og:description" content="Dette er eksamens-nettsiden min" />
+  <meta property="og:type" content="hoved-page" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="pictures/forside.jpg" />
+  <meta property="og:site_name" content="forside" />
+  <meta property="og:determiner" content="ett">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:alt" content="Nike logo som min hovedlogo" />
+
+  <!-- Meta taggene under er for Twitter:  -->
+  <meta name="twitter:site" content="kedik@hiof.no">
+  <meta name="twitter:title" content="Forsiden av min nettside">
+  <meta name="twitter:description" content="Dette er forsiden av min eksamens-nettside">
+  <meta name="twitter:image" content="pictures/forside.jpg">
+  <meta name="twitter:image:alt" content="Bildet av Nike logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  <!-- Her er mitt favicon -->
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+
+  <!-- Link til meta tag jeg brukte: -->
+  <!-- https://css-tricks.com/essential-meta-tags-social-media/#:~:text=Facebook%20uses%20%3Cmeta%3E%20tags%20leveraging%20the%20Open%20Graph,be%20found%20at%20the%20Open%20Graph%20Web%20site. -->
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/forside.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="visning-bar" id="progresjon"></div>
+    <div class="hoved"></div> -->
+
+    <header id="top">
+      <h1 id="try">Eksamen</h1>
+
+      <nav id="navv">
+
+        <!-- Bildet av logoen jeg har brukt har jeg tatt fra google søk av Nike -->
+        <a href="forside.html" aria-label="link-til-forside"><img id="logo" src="pictures/forside.jpg"
+            alt="My logo"></a>
+
+        <!-- <div id="mine-linker" class="min-link"> -->
+        <ul id="mine-linker" class="min-link" style.display=block>
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="uuvsseo.html">UU vs SEO</a></li>
+          <li><a href="cms.html">CMS</a></li>
+          <li><a href="analyse.html">Analyse</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+        <!-- </div> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-section">
+        <button onclick="tilToppen()" id="btn" title="Go to top">Top</button>
+        <article>
+          <header>
+            <h3>UU vs SEO</h3>
+          </header>
+          <figure>
+            <!-- Bildet jeg har tatt er fra htmlpro.net på google -->
+            <img src="pictures/seo.jpg" alt="A picture" id="seopicture">
+          </figure>
+          <p>
+            Hva er UU og hva er SEO? Hvorfor er de viktig innen Webutvikling?
+          </p>
+          <p>
+            Universell utforming betyr at alle skal ha lik tilgang... SEO er
+            metoder for at nettsider får bedre rangering...
+          </p>
+          <a href="uuvsseo.html">Les mer</a>
+        </article>
+
+        <article>
+          <header>
+            <h3>CMS</h3>
+          </header>
+          <figure>
+            <!-- Dette bildet har jeg tatt fra jaestic.com fra google -->
+            <img src="pictures/cms.jpg" alt="A picture">
+          </figure>
+          <p>Hva er CMS?</p>
+          <p>
+            CMS lar oss lage ett brukergrensesnitt for nettsider uten å måtte
+            skrive koden selv...
+          </p>
+          <a href="CMS.html">Les mer</a>
+        </article>
+
+        <article id="analyse">
+          <header>
+            <h3>Analyse</h3>
+          </header>
+          <figure>
+            <!-- dette bildet er tatt fra euroforum.nl fra google -->
+            <img src="pictures/analyse.jpg" alt="A picture">
+          </figure>
+          <p>
+            Hva er bra med nettsiden? Dette er de forbedringene jeg gjorde...
+          </p>
+          <a href="ANALYSE.html">Les mer</a>
+        </article>
+      </section>
+
+      <section class="contactme">
+        <h3>Lyst på muligheten til å kontakte oss?</h3>
+        <p id="text">
+          Hvis du har lyst til å kontakte oss, gjerne benytt deg av den
+          muligheten ved å trykke på knappen under.
+        </p>
+        <button onclick="window.location.href='contact.html'">
+          Kontakt Oss
+        </button>
+      </section>
+
+      <!-- <section> -->
+      <!-- <h4> Del på Sosiale Medier: </h4> -->
+      <!-- <a href="#" class="fa fa-facebook" target="_blank" aria-label="link-til-facebook"></a> -->
+      <!-- <iframe
+          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+          width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          id="del"></iframe> -->
+
+      <!-- <a href="#" class="fa fa-twitter" target="_blank" aria-label="link-til-twitter"></a> -->
+      <!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          id="del">Del</a> -->
+      <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="del"></script> -->
+
+      <!-- <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a> -->
+      <!-- </section> -->
+
+      <section class="facebook">
+        <h4>Del på Facebook:</h4>
+        <iframe
+          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+          width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          id="del"></iframe>
+      </section>
+
+      <section class="twitter">
+        <h4>Del på Twitter:</h4>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          id="del">Del</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="del"></script>
+      </section>
+
+      <section class="pinterest">
+        <h4>Del på Pinterest:</h4>
+        <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+      </section>
+
+    </main>
+    <aside>
+      <section id="rel-articles">
+        <header>
+          <h4>Relaterte linker til disse temaene:</h4>
+        </header>
+        <ul>
+          <li>
+            <a href="https://synlighet.no/blogg/universell-utforming-nettsider/#:~:text=Dette%20er%20de%20ulike%20kriteriene%20for%20Universell%20Utforming,end%20-%20kildekode%20som%20markerer%20innholdet%20godt%20"
+              target="_blank">
+              Her lærer du om Universell Utforming</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://searchengineland.com/guide/what-is-seo" target="_blank">
+              Her lærer du om SEO</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.sitecore.com/knowledge-center/digital-marketing-resources/what-is-a-cms"
+              target="_blank">
+              Hær lærer du om CMS</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- <section>
+        <h4> Del på Sosiale Medier: </h4>
+        <a href="#" class="fa fa-facebook" target="_blank"></a>
+        <a href="#" class="fa fa-twitter" target="_blank"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank"></a>
+      </section> -->
+    </aside>
+
+    <footer>
+      <p>kedikrasniqi@hotmail.com</p>
+      <section class="footer-icons">
+        <ul>
+          <p>Følg meg på sosiale medier:</p>
+          <a href="#" class="fa fa-facebook" target="_blank"></a>
+          <a href="#" class="fa fa-twitter" target="_blank"></a>
+          <a href="#" class="fa fa-pinterest" target="_blank"></a>
+        </ul>
+      </section>
+    </footer>
+  </div>
+
+  <script>
+    let x = document.getElementById("mine-linker");
+    function myFunction() {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    //For å få til koden under med at man kan scrolle til toppen så brukte jeg W3School.com som kilde
+    let minKnapp = document.getElementById("btn");
+
+    window.onscroll = function () { funksjonsSkroll() };
+
+    function funksjonsSkroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        minKnapp.style.display = "block";
+      } else {
+        minKnapp.style.display = "none";
+      }
+    }
+
+    function tilToppen() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    //For å fikse til at man kan dele på facebook, twitter og pinterest så brukte jeg JS koden under til det. 
+    //Jeg brukte en kilde for å få til JS koden under, det var denne youtube videoen: https://youtu.be/q-tGimz34Ho
+    const link = `https://www.facebook.com`;
+    const melding = encodeURIComponent('Hei, jeg fant denne artikkelen');
+    const title = encodeURIComponent(document.querySelector('title').textContent);
+
+    const facebook = document.querySelector('.fa-facebook');
+    facebook.href = `https://www.facebook.com/share.php?u=${link}`;
+
+    const twitter = document.querySelector('.fa-twitter');
+    twitter.href = `https://twitter.com/share?&url=${link}&text=${melding}&hashtags=webutvikling`;
+
+    const pinterest = document.querySelector('.fa-pinterest');
+    pinterest.href = `https://no.pinterest.com/`;
+  </script>
+</body>
+
+</html>

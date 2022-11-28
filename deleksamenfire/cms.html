@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/cms.css">
+
+  <meta name="title" content="Cms" />
+  <meta property="fb:app_id" content="your_app_id" />
+  <meta name="keywords" content="cms" />
+  <meta name="og:site" content="kedik@hiof.no" />
+  <meta propert="og:locale" content="nb_NO" />
+  <meta property="og:title" content="cms side" />
+  <meta property="og:description" content="Denne siden viser informasjon om CMS" />
+  <meta property="og:type" content="side-page" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="pictures/forside.jpg" />
+  <meta propert="og:site_name" content="cms" />
+  <meta property="og:determiner" content="ett">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:alt" content="Nike logo som min hovedlogo" />
+
+  <!-- Meta taggene under er for Twitter:  -->
+  <meta name="twitter:site" content="kedik@hiof.no">
+  <meta name="twitter:title" content="cms page">
+  <meta name="twitter:description" content="Denne siden viser informasjon om CMS">
+  <meta name="twitter:image" content="pictures/forside.jpg">
+  <meta name="twitter:image:alt" content="Bildet av Nike logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Her er mitt favicon -->
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="try">CMS</h1>
+
+      <nav id="navv">
+
+        <a href="forside.html"><img id="logo" src="pictures/forside.jpg" alt="My logo"></a>
+
+        <ul id="mine-linker" class="min-link" style.display=block>
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="uuvsseo.html">UU vs SEO</a></li>
+          <li><a href="cms.html">CMS</a></li>
+          <li><a href="analyse.html">Analyse</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <button onclick="tilToppen()" id="btn" title="Go to top">Top</button>
+        <div class="cmss">
+          <article id="cms-article">
+            <header>
+              <h3>Hva skiller et headless fra et tradisjonelt CMS?</h3>
+            </header>
+            <figure>
+              <!-- Dette bildet er tatt fra siden clker.com -->
+              <img src="pictures/cmspic.jpg" alt="Bildet av CMS" id="cms-pic">
+            </figure>
+            <p>
+              <span>Tradisjonell CMS</span> lar kontroll for både frontend og backend i nettsiden. Et slikt system
+              lagrer alle
+              dataene
+              for innholdet - såkalt backend,
+              f.eks. Tekst, bilder, osv. Mens den samtidig håndterer frontenden (det som vises). Dette betyr da at
+              frontend og backend er nært knyttet med hverandre
+              under tradisjonelt CMS. Mens <span>headless CMS</span> tar seg bare av innholdet/backend. Headless CMS har
+              ikke noe
+              frontend - det er her navnet headless kommer fra, fordi den mangler
+              'hodet'. Headless brukes til lagrind og redigering av innholdet, men er altså ikke andvarlig for hvordan
+              innholdet blir visuelt representert.
+            </p>
+
+            <p><span>Den</span> største forskjellen er at headless betyr at du kan koble en annen frontend til en annen
+              backend hvis
+              du
+              velger å gjøre det.
+              tradisjonell er 1 front og backend i 1 maskin (for eksempel)
+            </p>
+            <p id="kvote">"Det beste er CMS er alltid villig til å gå den ekstra milen for å passe og tilfredsstille
+              dine krav"
+            </p>
+            <p id="kvote">- Quote from Lanco</p>
+          </article>
+        </div>
+
+        <article class="losning">
+          <h3>Hvilket CMS-løsninger finnes det?</h3>
+          <figure>
+            <img src="pictures/cms-losning.jpg" alt="cms-losning" id="cms-losning">
+          </figure>
+          <p><span>Frontend-utviklere</span> som er de som tar seg av presentasjonen, får i stedet fleksibiliteten
+            til å jobbe med de rammene de ønsker.
+            Når innholdet er opprettet i backend, er det klart til å bli publisert. Det nye frontend-laget ber om
+            innholdet gjennom en API.
+            Innhold som leveres på denne måten, er uformatert. Frontend har ansvar for å presentere innholdet på
+            nettstedet.
+            I dette scenariet er frontend og backend løst koblet via API. Headless CMS blir populære, det er fleksibelt
+            siden det gir utviklere muligheten til å jobbe i hvilket rammeverk de vil,
+            tilpasningsdyktig siden innholdet som er rådata kan brukes til alle applikasjoner. Og fremtidssikker
+            årsaksteknologi utvikler seg,
+            og hodeløs cms lar deg utvikle deg sammen med den.</p>
+
+          <p><span>Du</span> kan mixe disse to sammen, du kan bruke headless for bedrfiten din sin nettside, som er
+            oppdatert ofte av
+            en utvikler. Så kan du velge tradisjonelt CMS
+            for din e-handel nettside som du ivaretar i huset.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <section>
+          <div class="div-table">
+            <section class="grid-table">
+              <div>
+                <h3>Tabell på ulike CMS-løsningene:</h3>
+              </div>
+              <div>
+                <h3>Fordeler:</h3>
+              </div>
+              <div>
+                <h3>Ulemper:</h3>
+              </div>
+              <div>
+                <h3>Likheter / Ulikheter:</h3>
+              </div>
+              <div>
+                <h3>CCMS:</h3>
+              </div>
+              <div>
+                <p> - Du kan eksportere innholdet ditt i en rekke formater</p>
+                <p> - Innhold i CCMS blir administrert lett </p>
+              </div>
+              <div>
+                <p> - CCMS bruker flere serverressurser enn det trengs og bør balanseres </p>
+              </div>
+              <div>
+                <p>Forskjell mellom CCMS og ECM:</p>
+                <p> - ECM utvider CCMS konseptet via en tidslinje for hvert innholdselement</p>
+              </div>
+              <div>
+                <h3>DMS:</h3>
+              </div>
+              <div>
+                <p> - Det er lett lesbarhet av dokumenter. </p>
+                <p> - Tilbyr led behandling i tillegg til bilder, grafikk, osv </p>
+              </div>
+              <div>
+                <p> - I løpset av noen år kan DMS lett bli utdatert </p>
+              </div>
+              <div>
+                <p>Ulikhet mellom DMS og DAM:</p>
+                <p> - Om bedrift bruker dokument og skjema, passer DMS bedre</p>
+                <p> - Om det bilder og videoer passer DAM bedre</p>
+              </div>
+              <div>
+                <h3>ECM:</h3>
+              </div>
+              <div>
+                <p> - Har bra sikkerhet i forhold til repositorium for administrerte varer, osv</p>
+                <p> - Frigjør organisasjonen fra å administrere papir</p>
+              </div>
+              <div>
+                <p> - Kan gi lavere rangering i henhold til SEO</p>
+              </div>
+              <div>
+                <p>Likhet mellom ECM og CCMS:</p>
+                <p> - Begge har 'snarveier' for å administrere innhold, papirer, osv. Lettere</p>
+              </div>
+              <div>
+                <h3>DAM:</h3>
+              </div>
+              <div>
+                <p> - Nyttig for firmaer som søker eiendeler etter sted, osv</p>
+                <p> - Brukere får tilgang når de vil/hvor de vil</p>
+              </div>
+              <div>
+                <p> - Kan bli veldig dyrt </p>
+                <p> - Er avhengig av å ha ett API </p>
+              </div>
+              <div>
+                <p>Likhet mellom DAM og DMS:</p>
+                <p> - Begge systemer øker produktivitet</p>
+                <p> - Lite tid brukes på å finne ting</p>
+                <p> - Begge har funksjonen å dele filer</p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </section>
+      <!-- <section>
+        <h4> Del på Sosiale Medier: </h4>
+        <a href="#" class="fa fa-facebook" target="_blank" aria-label="link-til-facebook"></a>
+        <a href="#" class="fa fa-twitter" target="_blank" aria-label="link-til-twitter"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+      </section> -->
+
+      <section class="facebook">
+        <h4>Del på Facebook:</h4>
+        <iframe
+          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+          width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          id="del"></iframe>
+      </section>
+
+      <section class="twitter">
+        <h4>Del på Twitter:</h4>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          id="del">Del</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="del"></script>
+      </section>
+
+      <section class="pinterest">
+        <h4>Del på Pinterest:</h4>
+        <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+      </section>
+
+    </main>
+    <footer>
+      <p>kedikrasniqi@hotmail.com</p>
+      <section class="footer-icons">
+        <ul>
+          <p>Følg meg på sosiale medier:</p>
+          <a href="#" class="fa fa-facebook" target="_blank"></a>
+          <a href="#" class="fa fa-twitter" target="_blank"></a>
+          <a href="#" class="fa fa-pinterest" target="_blank"></a>
+        </ul>
+      </section>
+    </footer>
+  </div>
+
+  <script>
+    let x = document.getElementById("mine-linker");
+    function myFunction() {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    //For å få til koden under med at man kan scrolle til toppen så brukte jeg W3School.com som kilde
+    let minKnapp = document.getElementById("btn");
+
+    window.onscroll = function () { funksjonsSkroll() };
+
+    function funksjonsSkroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        minKnapp.style.display = "block";
+      } else {
+        minKnapp.style.display = "none";
+      }
+    }
+
+    function tilToppen() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    //For å fikse til at man kan dele på facebook, twitter og pinterest så brukte jeg JS koden under til det. 
+    //Jeg brukte en kilde for å få til JS koden under, det var denne youtube videoen: https://youtu.be/q-tGimz34Ho
+    const link = `https://www.facebook.com`;
+    const melding = encodeURIComponent('Hei, jeg fant denne artikkelen');
+    const title = encodeURIComponent(document.querySelector('title').textContent);
+
+    const facebook = document.querySelector('.fa-facebook');
+    facebook.href = `https://www.facebook.com/share.php?u=${link}`;
+
+    const twitter = document.querySelector('.fa-twitter');
+    twitter.href = `https://twitter.com/share?&url=${link}&text=${melding}&hashtags=webutvikling`;
+
+    const pinterest = document.querySelector('.fa-pinterest');
+    pinterest.href = `https://no.pinterest.com/`;
+  </script>
+</body>
+
+</html>

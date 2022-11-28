@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/analyse.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="title" content="Analyse" />
+  <meta property="fb:app_id" content="your_app_id" />
+  <meta name="keywords" content="analytics" />
+  <meta name="og:site" content="kedik@hiof.no" />
+  <meta propert="og:locale" content="nb_NO" />
+  <meta property="og:title" content="analysing page" />
+  <meta property="og:description" content="This shows me analysing how good my website is" />
+  <meta property="og:type" content="side-page" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="pictures/forside.jpg" />
+  <meta propert="og:site_name" content="analyse" />
+  <meta property="og:determiner" content="ett">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:alt" content="Nike logo som min hovedlogo" />
+
+  <!-- Meta taggene under er for Twitter:  -->
+  <meta name="twitter:site" content="kedik@hiof.no">
+  <meta name="twitter:title" content="Analyse side">
+  <meta name="twitter:description" content="Dette viser meg analysere min nettside">
+  <meta name="twitter:image" content="pictures/forside.jpg">
+  <meta name="twitter:image:alt" content="Bildet av Nike logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+
+  <!-- Her er mitt favicon -->
+  <link rel="icon" type="image/x-icon" href="pictures/favicon.png">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="try">Analyse</h1>
+
+      <nav id="navv">
+
+        <a href="forside.html"><img id="logo" src="pictures/forside.jpg" alt="My logo"></a>
+
+        <ul id="mine-linker" class="min-link" style.display=block>
+          <li><a href="forside.html">Hjem</a></li>
+          <li><a href="uuvsseo.html">UU vs SEO</a></li>
+          <li><a href="cms.html">CMS</a></li>
+          <li><a href="analyse.html">Analyse</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2> Her er analysen av mitt Nettsted </h2>
+        <p> Jeg brukte Google Lighthouse som mitt berktøy for å analysere nettsiden
+          min for UU, SEO og lignende.
+        </p>
+        <p>
+          Under så er et bildet av vurderingene jeg fikk av Lighthouse før
+          jeg gjorde endringer:
+        </p>
+
+        <section class="main-section-holder">
+          <section class="main-section" id="secction">
+            <p>Dette bildet under viser analysen av forsiden min:</p>
+            <figure>
+              <img src="pictures/reeview.png" alt="Bildet av my rating" id="rating">
+            </figure>
+          </section>
+
+          <section class="main-section" id="secction">
+            <p>Dette bildet under viser analysen av min UU vs SEO side:</p>
+            <figure>
+              <img src="pictures/uuseobilde.png" alt="Bildet av my rating" id="rating">
+            </figure>
+          </section>
+
+          <section class="main-section">
+            <p>Dette bildet under viser analysen av min CMS side:</p>
+            <figure>
+              <img src="pictures/cmsreview.png" alt="Bildet av my rating" id="rating">
+            </figure>
+          </section>
+        </section>
+
+        <section>
+          <section class="heuristic-table">
+            <div>
+              <h3>Heuristikk evaluering av min nettside</h3>
+            </div>
+
+            <div>
+              <h3>Hva denne heuristikken innebærer:</h3>
+            </div>
+
+            <div>
+              <h3>Hvordan nettsiden min scåret:</h3>
+            </div>
+
+            <div>
+              <h3>1. Visibility of system status:</h3>
+            </div>
+            <div>
+              <p> - Designet skal alltid holde brukerne informert om hva som skjer, gjennom passende tilbakemeldinger
+                innen
+                rimelig tid </p>
+            </div>
+            <div>
+              <p> - Nettsiden min har bra informasjon anngående hva som skjer. Men den har ikke noe funksjon å gi
+                tilbakemelding</p>
+            </div>
+
+            <div>
+              <h3>2. Match between system and the real world:</h3>
+            </div>
+            <div>
+              <p> - Designet skal snakke brukernes språk. </p>
+              <p> - Bruk ord, uttrykk og begreper som er kjent for brukeren. </p>
+              <p> - Følg virkelige konvensjoner, slik at informasjon vises i en naturlig og logisk rekkefølge.</p>
+            </div>
+            <div>
+              <p> - Dette er noe nettsiden min gjør bra. </p>
+              <p>- Ordene jeg bruker er ord som gir mening, slik at man slipper å søke opp betydningen.</p>
+              <p>- Språket jeg bruker er tradisjonelt og kjent for nettsider. </p>
+              <p>- Det er brukt bra bruk av kjente ikoner på nettsiden min.</p>
+              <p>- Overskriftene er braog beskriver hva innholdet mitt gjelder</p>
+            </div>
+
+            <div>
+              <h3>3. User control and freedom:</h3>
+            </div>
+            <div>
+              <p> - Brukere utfører ofte handlinger ved en feiltakelse. </p>
+              <p> - De trenger en tydelig merket "nødutgang" for å
+                forlate den uønskede handlingen uten å måtte gå gjennom en utvidet prosess.</p>
+            </div>
+            <div>
+              <p>- Nettsiden min har en fin navigasjons-sti for å gå tilbake/andre steder.</p>
+            </div>
+
+            <div>
+              <h3>4. Consistency and standards:</h3>
+            </div>
+            <div>
+              <p>- Brukere skal ikke måtte lure på om forskjellige ord, situasjoner eller handlinger betyr det samme.
+                Følg
+                plattform- og bransjekonvensjoner. </p>
+            </div>
+            <div>
+              <p>- Bruker ikke ord som er altfor avanserte og forklarer de forskjellige tingene på en forståelig måte
+              </p>
+            </div>
+
+            <div>
+              <h3>5. Error prevention:</h3>
+            </div>
+            <div>
+              <p> - Gode feilmeldinger er viktige, men de beste designene forhindrer nøye at det oppstår problemer i
+                utgangspunktet. </p>
+              <p> - Fjern enten feilutsatte forhold, eller se etter dem og gi brukerne et
+                bekreftelsesalternativ før de forplikter seg til handlingen</p>
+            </div>
+            <div>
+              <p>- Nettsiden min har ikke nok funksjoner til at det trengs å vise feilmeldinger.</p>
+              <p>- Man kan lett navigere vi navgiasjons-menyen.</p>
+            </div>
+
+            <div>
+              <h3>6. Recognition rather than recall:</h3>
+            </div>
+            <div>
+              <p> - Minimer brukerens minnebelastning ved å gjøre elementer, handlinger og alternativer synlige.
+                Brukeren
+                skal ikke måtte huske informasjon fra en del av grensesnittet til en annen. </p>
+              <p>- Informasjon som kreves for å
+                bruke designet (f.eks. feltetiketter eller menyelementer) skal være synlig eller lett tilgjengelig når
+                det er nødvendig</p>
+            </div>
+            <div>
+              <p>- Alle alternativene som går ann å gjøre på nettsiden min er synlige.</p>
+              <p>- Nettsiden min er utviklet slik at om man vil gjøre en handling, så er det vist tydelig hva som skjer
+                og hvordan.</p>
+            </div>
+
+            <div>
+              <h3>7. Flexibility and efficiency of use:</h3>
+            </div>
+            <div>
+              <p> - Snarveier - skjult for nybegynnere - kan øke hastigheten på samspillet for ekspertbrukeren slik at
+                designet kan imøtekomme både uerfarne og erfarne brukere. </p>
+              <p>- Tillat brukere å skreddersy hyppige
+                handlinger</p>
+            </div>
+            <div>
+              <p>- Designet på nettsiden min er simpel, hvor både erfarne og nybegynnere klarer å benytte seg av
+                nettsiden min.</p>
+              <p>- Det er ingen handling i nettsiden min hvor hverken erfarne eller nybegynnere ikke klarer å benytte
+                seg av.</p>
+            </div>
+
+            <div>
+              <h3>8. Aesthetic and minimalist design:</h3>
+            </div>
+            <div>
+              <p> - Grensesnitt bør ikke inneholde informasjon som er irrelevant eller sjelden nødvendig. </p>
+              <p>- Hver ekstra
+                informasjonsenhet i et grensesnitt konkurrerer med de relevante informasjonsenhetene og reduserer deres
+                relative synlighet</p>
+            </div>
+            <div>
+              <p>- Det er ikke informasjon på min nettside som er irrelevant.</p>
+              <p>- Det er ikke noe unødvendig informasjon.</p>
+              <p>- All informasjonen som er, er viktig å ha med og det er ikke 'for mye' informasjon.</p>
+            </div>
+
+            <div>
+              <h3>9. Help users recognize, diagnose, and recover from errors:</h3>
+            </div>
+            <div>
+              <p> - Feilmeldinger skal uttrykkes i vanlig språk (ingen feilkoder), angi problemet nøyaktig og
+                konstruktivt
+                foreslå en løsning </p>
+            </div>
+            <div>
+              <p>- På kontakt-skjemaet mitt, hvis man ikke fyller ut de obligatoriske meldingene, får man beskjed at det
+                må fylles ut.</p>
+            </div>
+
+            <div>
+              <h3>10. Help and documentation:</h3>
+            </div>
+            <div>
+              <p> - Det er best hvis systemet ikke trenger noen ekstra forklaring. Det kan imidlertid være nødvendig å
+                fremlegge dokumentasjon for å hjelpe brukerne med å forstå hvordan de skal fullføre oppgavene sine </p>
+            </div>
+            <div>
+              <p>- Dette er ett punkt som nettsiden min også har gjort det greit på.</p>
+              <p>- Det er ingen unødvendig ekstra forklaringer.</p>
+              <p>- Det er bra med tilabkemeldinger: F.eks. Hvis man ikke fyller ut obligatoriske felt på
+                kontakt-skjemaet mitt.</p>
+            </div>
+          </section>
+
+          <section class="heuristic-summary">
+            <p>For å summere min nettside sin heuristikk, så har den oppnådd de 10 heuristikkene på en grei måte.
+              Noen av heuristikkene kunne jeg ikke gi en ordetnlig tilbakemelding på, fordi den ikke er nok utviklet med
+              javascript - som gjør at på et par av punktene, så er de egentlig oppnådd, men samtidig ikke helt oppnådd.
+            </p>
+          </section>
+
+        </section>
+
+        <section class="figure-section">
+          <p id="gray"> Under har jeg 3 forskjellige seksjoner, hvor jeg analyserte Forside-, UU vs SEO-, og CMS siden:
+          </p>
+
+          <section>
+            <h3> Feilene Forside-siden: </h3>
+            <div class="sideh">
+              <h5>accessibility/tilgjengelighet:</h5>
+
+              <p>Her var det noen endringer jeg gjorde.
+                En av feilmeldingene mine var under accessibility. Under er et bildet:
+              </p>
+              <figure>
+                <!-- <img src="pictures/acesibilitytre.png" alt="Bildet av feilmelding"> -->
+                <img src="pictures/newnewnewnewnewnewnewnewbutton.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>
+                Feilen til bildet over var at den grønne knappen min
+                på forsiden hadde en for lav kontrast som fører til at
+                det blir vanskelig for noen å lese det.
+              </p>
+
+              <p> En annen feil jeg hadde under accessibility er på bildet under:</p>
+              <figure>
+                <img src="pictures/newforsidename.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>Feilen til bildet over var at jeg ikke hadde brukt aria-label på de knappene vist på bildet. </p>
+
+              <!-- <p> En annen feil jeg hadde under accessibility er på bildet under:</p>
+              <figure>
+                <img src="pictures/forsidenavigation.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>Feilen til bildet over var at</p> -->
+
+              <p> Neste feil jeg fikk var under SEO: </p>
+              <figure>
+                <img src="pictures/newnewnewseofix.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>Feilen til bildet over var at jeg ikke hadde brukt meta description.
+                Det er fordi jeg analyserte siden min før jeg tok inn meta-taggene. Derfor har jeg lav SEO score.</p>
+            </div>
+          </section>
+
+          <section>
+            <h3> Feilene i UU vs SEO-siden: </h3>
+            <div class="sideh">
+              <p>Her var det noen endringer jeg gjorde.
+                En av feilmeldingene mine var under accessibility. Under er et bildet:
+              </p>
+              <figure>
+                <img src="pictures/newuuacess.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>Feilen til bildet over var at jeg ikke hadde brukt aria-label på de knappene vist på bildet. </p>
+              <p> Neste feil jeg fikk var under SEO: </p>
+              <figure>
+                <img src="pictures/newnewuusseo.png" alt="Bildet av feilmelding">
+                <!-- newnewuusseo -->
+              </figure>
+              <p>Feilen til bildet over var at jeg ikke hadde brukt meta description.
+                Det er fordi jeg analyserte siden min før jeg tok inn meta-taggene. Derfor har jeg lav SEO score.</p>
+            </div>
+          </section>
+
+
+          <section>
+            <h3> Feilene i CMS-siden: </h3>
+            <div class="sideh">
+              <h5>accessibility/tilgjengelighet:</h5>
+              <p>Her var det noen endringer jeg gjorde.
+                En av feilmeldingene mine var under accessibility. Under er et bildet:
+              </p>
+              <figure>
+                <!-- <img src="pictures/acesibilitytre.png" alt="Bildet av feilmelding"> -->
+                <img src="pictures/newnewnewacecability.png" alt="Bildet av feilmelding">
+              </figure>
+              <p>Feilen til bildet over var at jeg ikke hadde brukt aria-label på de knappene vist på bildet. </p>
+            </div>
+          </section>
+
+          <section>
+            <h3>Feilene i Kontakt-oss siden: </h3>
+            <div class="sideh">
+              <p>Her var det noen endringer jeg gjorde. Her så brukte jeg verktøyet Wave.</p>
+              <figure>
+                <img src="pictures/check2-mistake.png" alt="Bildet av feilen jeg fikk">
+              </figure>
+              <p>Feilen på bildet over er at jeg ikke hadde brukt label tagen, men brukte bare p tag i stedet.</p>
+              <!-- <h3> Jeg hadde helt like feil i 'Kontakt Oss' siden, derfor valgte jeg å ikke ta det med for å bruke
+                unødvendig plass</h3> -->
+              <p>Neste feil jeg fikk var at jeg hadde for lav kontrast:</p>
+              <figure>
+                <img src="pictures/contrast-text-mistake.png" alt="Bildet av kontrast feil">
+              </figure>
+              <p>Feilen på bildet over var at texten hadde for lav kontrast i forhold til bakgrunnsfargen.</p>
+            </div>
+          </section>
+        </section>
+
+      </section>
+
+      <h3> Her er tabellen min av resultater: </h3>
+      <section>
+        <section class="table">
+
+          <section>
+            <p>Bildet 1 før endring:</p>
+            <figure>
+              <img src="pictures/newnewaria2.png" alt="bildet av aria link" id="aria">
+            </figure>
+          </section>
+
+          <section>
+            <p>Bildet 1 etter endring:</p>
+            <figure>
+              <img src="pictures/newnewaria3.png" alt="løsning bildet av linken">
+            </figure>
+            <p>Det jeg rettet opp i bildet 1, var å legge til aria-label. Den definerer en strengverdi som gir navn
+              til
+              et interaktivt element. </p>
+          </section>
+
+          <section>
+            <p>Bildet 2 før endring:</p>
+            <figure>
+              <img src="pictures/knappfor-png.png" alt="Bildet av knapp før endring">
+            </figure>
+          </section>
+
+          <section>
+            <p>Bildet 2 etter endring:</p>
+            <figure>
+              <img src="pictures/knappetter.png" alt="Bildet av knapp etter endring">
+            </figure>
+            <p> Det jeg rettet opp i bildet 2 var å gjøre om fargene mer mørkaktig, fordi fargen var for lys.</p>
+          </section>
+
+          <section>
+            <p>Bildet 3 før endring:</p>
+            <p> Her hadde jeg ingen meta tag</p>
+          </section>
+
+          <section>
+            <p>Bildet 3 etter endring:</p>
+            <figure>
+              <img src="pictures/description-after.png" alt="Bildet av meta description tag">
+            </figure>
+            <p> Det jeg rettet opp var å legge til Meta description tag. </p>
+          </section>
+
+
+          <section>
+            <p>Bildet 4 før endring:</p>
+            <figure>
+              <img src="pictures/check-before.png" alt="Bildet av checkboksen før endring">
+            </figure>
+          </section>
+
+          <section>
+            <p>Bildet 4 etter endring:</p>
+            <figure>
+              <img src="pictures/check-after.png" alt="Bildet av checkboksen etter endring">
+            </figure>
+            <p> Det jeg rettet opp i bildet 4 var å gjøre p tagen til checkboksen om til en label tag.</p>
+          </section>
+
+          <section>
+            <p>Bildet 5 før endring:</p>
+            <figure>
+              <img src="pictures/text-for.png" alt="Bildet av kontrast farge før endring">
+            </figure>
+            <p>Bildet før endring:</p>
+            <figure>
+              <img src="pictures/text2bildet.png" alt="Bildet av nettsiden før endring">
+            </figure>
+          </section>
+
+          <section>
+            <p>Bildet 5 etter endring:</p>
+            <figure>
+              <img src="pictures/kodetextfor.png" alt="Bildet av kode kontrast før endring">
+            </figure>
+            <p>Bildet etter endring:</p>
+            <figure>
+              <img src="pictures/text2etter.png" alt="Bildet av kontrast farge etter endring">
+            </figure>
+            <p>Bildet under viser hvorfor jeg endret fargene. Nå oppnår jeg AA og AAA krav i kontrast.</p>
+            <figure>
+              <img src="pictures/waveendring.png" alt="">
+            </figure>
+          </section>
+        </section>
+
+        <h4> Disclaimer: </h4>
+        <p> Grunnen til at jeg ikke hadde flere bilder, er fordi feilene jeg fikk på de 3 analysene var samme feil.
+          Så jeg valgte å legge til ett bildet for hver forskjellig feil, slik at jeg slapp å vise samme feil flere
+          ganger.
+        </p>
+
+      </section>
+
+      <section class="pdf">
+        <h3>Her er min tilgjengelighetserklæring med A, AA og AAA kravene jeg oppnår, i PDF:</h3>
+        <a href="file:///C:/Users/kedik/OneDrive/Skrivebord/Informasjonssystemer/H%C3%B8gskole%203.%20Semester/webutvikling2/deleksamner/deleksamenfire/siste-pdf-erk.pdf"
+          target="_blank">
+          Trykk her for tilgjengelighetserklæring...</a>
+        <p>For å oppsumere pdf-en av tilgjengelighetserklæringen min:</p>
+        <p>- Totalt A krav oppfylt: 13 </p>
+        <p>- Totalt AA krav oppfylt: 10 </p>
+        <p>- Totalt AAA krav oppfylt: 5 </p>
+        <p> Til sammen blir dette 28 krav av A, AA og AAA krav som jeg oppfyller.</p>
+        <p> Jeg så jeg bare hadde med 9 av 12 retningslinjer. De 3 jeg ikke hadde med i pdf-en er lagd til her:</p>
+        <ul>
+          <li>- Retningslinkje 1.3: Mulig å tilpasse. Forklaring: Gi alternativer til tidsbaserte medier.
+          </li>
+          <li>- Retingslinje 2.2: Nok tid. Forklaring: Gi brukerne nok tid til å lese og bruke innhold.
+          </li>
+          <li>- Retnignslinje 2.3 Anfall og andre fysiske reaksjoner. Forklaring: Ikke utform innhold på en måte som er
+            kjent for å forårsake anfall.
+          </li>
+        </ul>
+      </section>
+
+      <button onclick="tilToppen()" id="btn" title="Go to top">Top</button>
+
+      <!-- <section>
+        <h4> Del på Sosiale Medier: </h4>
+        <a href="#" class="fa fa-facebook" target="_blank" aria-label="link-til-facebook"></a>
+        <a href="#" class="fa fa-twitter" target="_blank" aria-label="link-til-twitter"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+      </section> -->
+
+      <section class="facebook">
+        <h4>Del på Facebook:</h4>
+        <iframe
+          src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+          width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          id="del"></iframe>
+      </section>
+
+      <section class="twitter">
+        <h4>Del på Twitter:</h4>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          id="del">Del</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" id="del"></script>
+      </section>
+
+      <section class="pinterest">
+        <h4>Del på Pinterest:</h4>
+        <a href="#" class="fa fa-pinterest" target="_blank" aria-label="link-til-pinterest"></a>
+      </section>
+
+    </main>
+
+    <aside>
+      <section id="rel-articles">
+        <header>
+          <h4>Relaterte linker til disse temaene:</h4>
+        </header>
+        <ul>
+          <li>
+            <a href="https://ndla.no/subject:1:80f10045-2faa-4f6f-be0f-4c7ec9618186/topic:3:103867/topic:2:185606/resource:1:186655"
+              target="_blank">
+              Hvordan analysere</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.bing.com/search?q=hvordan+analysere+nettside&qs=n&form=QBRE&sp=-1&pq=hvordan+analysere+nettsid&sc=5-25&sk=&cvid=C8876AF022AD4B65A5513F143B9EC49F&ghsh=0&ghacc=0&ghpl="
+              target="_blank">
+              Et søk av analyse</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">
+              Hvordan lage tabell med grid</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer>
+      <p>kedikrasniqi@hotmail.com</p>
+      <section class="footer-icons">
+        <ul>
+          <p>Følg meg på sosiale medier:</p>
+          <a href="#" class="fa fa-facebook" target="_blank"></a>
+          <a href="#" class="fa fa-twitter" target="_blank"></a>
+          <a href="#" class="fa fa-pinterest" target="_blank"></a>
+        </ul>
+      </section>
+    </footer>
+  </div>
+
+  <script>
+
+    let x = document.getElementById("mine-linker");
+    function myFunction() {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    //For å få til koden under med at man kan scrolle til toppen så brukte jeg W3School.com som kilde
+    let minKnapp = document.getElementById("btn");
+
+    window.onscroll = function () { funksjonsSkroll() };
+
+    function funksjonsSkroll() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        minKnapp.style.display = "block";
+      } else {
+        minKnapp.style.display = "none";
+      }
+    }
+
+    function tilToppen() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    //For å fikse til at man kan dele på facebook, twitter og pinterest så brukte jeg JS koden under til det. 
+    //Jeg brukte en kilde for å få til JS koden under, det var denne youtube videoen: https://youtu.be/q-tGimz34Ho
+    const link = `https://www.facebook.com`;
+    const melding = encodeURIComponent('Hei, jeg fant denne artikkelen');
+    const title = encodeURIComponent(document.querySelector('title').textContent);
+
+    const facebook = document.querySelector('.fa-facebook');
+    facebook.href = `https://www.facebook.com/share.php?u=${link}`;
+
+    const twitter = document.querySelector('.fa-twitter');
+    twitter.href = `https://twitter.com/share?&url=${link}&text=${melding}&hashtags=webutvikling`;
+
+    const pinterest = document.querySelector('.fa-pinterest');
+    pinterest.href = `https://no.pinterest.com/`;
+  </script>
+</body>
+
+</html>
